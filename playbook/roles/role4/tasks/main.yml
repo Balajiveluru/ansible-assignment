@@ -1,0 +1,7 @@
+- name: installing the docker on redhat
+  command: yum install docker -y
+  when: ansible_os_family== "RedHat"
+
+- name: installing the apache2 on ubuntu
+  command: apt-get-y install apache2
+  when: ansible_os_family== "Debian"

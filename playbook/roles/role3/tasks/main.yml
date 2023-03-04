@@ -1,0 +1,14 @@
+- name: installing git
+  command: yum install git -y
+
+- name: installing httpd
+  command: yum install httpd -y
+
+- name: restart httpd
+  command: systemctl restart httpd
+
+- name: pushing code from git
+  git:
+    repo: 'https://github.com/Balajiveluru/trainticketsdeplo.git'
+    dest: '/var/www/html/'
+

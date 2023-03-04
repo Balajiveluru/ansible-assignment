@@ -1,0 +1,5 @@
+- name: installing httpd
+  command: yum install httpd -y
+
+- name: restart httpd
+  command: systemctl restart httpd

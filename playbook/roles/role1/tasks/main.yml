@@ -1,0 +1,9 @@
+- name: add the users to the servers
+  user: name='{{item}}' state=present
+  with_items:
+    - balaji
+    - prasad
+    - srikanth
+    - viswa
+    - sai
+

@@ -1,0 +1,7 @@
+- name: installing NumPy using pip command
+  pip:
+    name: NumPy
+
+- name: installing pandas using pip
+  pip:
+    name: pandas
